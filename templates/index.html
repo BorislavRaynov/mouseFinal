@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MouseFinal</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Mouse and Webcam Data</h1>
+    <div id="mouse-coordinates">
+        <p>Mouse Coordinates:</p>
+        <p id="mouse-x">X: </p>
+        <p id="mouse-y">Y: </p>
+    </div>
+    <div id="capture-status">
+        <p>Capture Status:</p>
+        <p id="capture-message"></p>
+    </div>
+    <script src="{% static 'js/mouse_front.js' %}"></script>
+</body>
+</html>
